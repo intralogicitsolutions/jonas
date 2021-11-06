@@ -56,7 +56,7 @@ body {
   letter-spacing: 2px;
 }
 .manage-frame-h1 {
-  font-size: 65px !important;
+  font-size: 60px !important;
   font-weight: lighter !important;
   line-height: initial !important;
 }
@@ -84,4 +84,31 @@ mat-card {
   font-size: 13px;
   color: grey;
   letter-spacing: 1px;
+}
+.manage-frame-h2 {
+  font-size: 48px !important;
+  font-weight: 400 !important;
+}
+.float-right {
+  float: right !important;
+}
+.config-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.config-label {
+  font-size: 17px;
+}
+.config-right-text {
+  font-size: 13px;
+}
+.mat-progress-bar-fill::after {
+  background-color: #018786;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.mat-typography h2 {
+  line-height: initial !important;
 }
