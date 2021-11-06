@@ -1,0 +1,41 @@
+<mat-nav-list class="sidenav-list">
+    <a mat-list-item  (click)="onToggleClose()">
+        <mat-icon>input</mat-icon>
+        <span>Minimize menu</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="onToggleClose()">
+        <mat-icon>input</mat-icon>
+        <span>Dashboard</span>
+    </a>
+    <a mat-list-item (click)="onItemSelected()"
+        class="menu-list-item">
+        <mat-icon class="routeIcon">account_circle</mat-icon>
+        Ongoing Activities
+        <span fxFlex>
+            <span fxFlex></span>
+            <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">
+                expand_more
+            </mat-icon>
+        </span>
+    </a>
+    <div *ngIf="expanded" class="sub-menu">
+        <mat-nav-list class="sidenav-list sidenav-sub">
+            <a mat-list-item routerLink="/login" (click)="onToggleClose()">
+                <mat-icon>input</mat-icon>
+                <span>Dashboard</span>
+            </a>
+        </mat-nav-list>
+    </div>
+    <a mat-list-item routerLink="/accomodation" (click)="onToggleClose()">
+        <mat-icon>favorite</mat-icon>
+        <span>Risk Assessment</span>
+    </a>
+    <a mat-list-item routerLink="/accomodation" (click)="onToggleClose()">
+        <mat-icon>hotel</mat-icon>
+        <span>Manage Frameworks</span>
+    </a>
+    <a mat-list-item routerLink="/offers" (click)="onToggleClose()">
+        <mat-icon>input</mat-icon>
+        <span>Log Out</span>
+    </a>
+</mat-nav-list>
