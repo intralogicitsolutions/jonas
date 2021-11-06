@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -20,13 +19,15 @@ $jonas-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$jonas-theme: mat.define-light-theme((
-  color: (
-    primary: $jonas-primary,
-    accent: $jonas-accent,
-    warn: $jonas-warn,
+$jonas-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $jonas-primary,
+      accent: $jonas-accent,
+      warn: $jonas-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -36,7 +37,51 @@ $jonas-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.container {
+  padding-top: var(--bs-gutter-x, 2.5rem);
+}
+.control-frame-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.manage-frame-h1 {
+  font-size: 65px !important;
+  font-weight: lighter !important;
+  line-height: initial !important;
+}
+.control-frame-select {
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+mat-card {
+  box-shadow: none !important;
+  border: 2px solid #d6d6d6 !important;
+}
+.mat-card > .mat-card-xl-image:first-child {
+  margin: 0px !important;
+}
+.configure-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.standard-label {
+  color: grey;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.desc-label {
+  font-size: 13px;
+  color: grey;
+  letter-spacing: 1px;
+}

@@ -1,5 +1,5 @@
 <mat-nav-list class="sidenav-list">
-    <a mat-list-item  (click)="onToggleClose()">
+    <a mat-list-item (click)="onToggleClose()">
         <!-- <mat-icon>input</mat-icon> -->
         <i class="fas fa-angle-double-left minimizeiconsize"></i>
         <span>Minimize menu</span>
@@ -9,8 +9,7 @@
         <i class="fa fa-chart-line iconsize"></i>
         <span>Dashboard</span>
     </a>
-    <a mat-list-item (click)="onItemSelected()"
-        class="menu-list-item">
+    <a mat-list-item (click)="onItemSelected()" class="menu-list-item">
         <mat-icon class="routeIcon iconsize">account_circle</mat-icon>
         Ongoing Activities
         <span fxFlex>
@@ -36,13 +35,13 @@
         <mat-icon class="iconsize">favorite</mat-icon>
         <span>Risk Assessment</span>
     </a>
-    <a mat-list-item routerLink="/accomodation" (click)="onToggleClose()">
+    <a mat-list-item routerLink="/dashboard/manage-framework" (click)="onToggleClose()">
         <mat-icon class="iconsize">build</mat-icon>
         <span>Manage Frameworks</span>
     </a>
     <a mat-list-item routerLink="/offers" (click)="onToggleClose()">
         <!-- <mat-icon>input</mat-icon> -->
-        <i class="fa fa-sign-out-alt iconsize" ></i>
+        <i class="fa fa-sign-out-alt iconsize"></i>
         <span>Log Out</span>
     </a>
 </mat-nav-list>
