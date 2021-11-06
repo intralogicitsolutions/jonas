@@ -8,7 +8,20 @@
 .mat-list-base .mat-list-option {
     height: 65px;
 }
-.sub-menu,.sidenav-sub{
+.sub-menu,
+.sidenav-sub {
     padding-top: 0px;
     padding-left: 10px;
+}
+.minimizeiconsize {
+    font-size: 15px;
+    margin-right: 20px;
+}
+.iconsize {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.arrowsize {
+    margin-top: 10px;
+    margin-right: 10px;
 }
