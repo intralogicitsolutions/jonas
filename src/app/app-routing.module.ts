@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./base/base.module').then(m => m.BaseModule)
   },
   {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+    path: 'layout',
+    loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
   }
 ];
 
