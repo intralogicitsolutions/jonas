@@ -222,3 +222,14 @@ mat-card {
   font-weight: 600;
   margin-right: 5px;
 }
+.mat-content {
+  width: 100%;
+  display: initial !important;
+}
+.float-end {
+  text-align: end;
+}
+.mat-expansion-panel-header {
+  padding: 0px !important;
+  height: auto !important;
+}

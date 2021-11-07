@@ -1,45 +1,10 @@
-.example-accordion {
-    display: block;
-
-    width: 100%;
-  }
-  
-  .example-accordion-item {
-    display: block;
-    border: solid 1px #ccc;
-  }
-  
-  .example-accordion-item + .example-accordion-item {
-    border-top: none;
-  }
-  
-  .example-accordion-item-header {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-  }
-  
-  .example-accordion-item-description {
-    font-size: 0.85em;
-    color: #999;
-  }
-  
-  .example-accordion-item-header,
-  .example-accordion-item-body {
-    padding: 16px;
-  }
-  
-  .example-accordion-item-header:hover {
-    cursor: pointer;
-    background-color: #eee;
-  }
-  
-  .example-accordion-item:first-child {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-  }
-  
-  .example-accordion-item:last-child {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-  }
+.accordian-style {
+  padding: 15px !important;
+  // display: contents;
+  background-color: transparent;
+  box-shadow: none;
+}
+.mat-expansion-panel-spacing {
+  background-color: white !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%) !important;
+}

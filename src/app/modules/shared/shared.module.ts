@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [],
   imports: [
@@ -35,12 +36,14 @@ import { MatTabsModule } from '@angular/material/tabs';
     FormsModule,
     MatInputModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatExpansionModule
   ],
   exports: [MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule, MatButtonModule, MatSnackBarModule,
     FormsModule,
     MatInputModule,
     MatTabsModule,
+    MatExpansionModule,
     MatChipsModule,
     MatFormFieldModule, MatCardModule, MatProgressBarModule, MatGridListModule, CdkAccordionModule, MatCheckboxModule]
 })

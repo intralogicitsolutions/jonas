@@ -13,16 +13,16 @@
                 130 wireless headphones. </mat-label>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 mt-1">
-            <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu" height="80%" width="100%">
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"
+                height="60%" width="100%">
         </div>
     </div>
-    <cdk-accordion>
+    <!-- <cdk-accordion>
         <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
             role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
-            [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+            [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index"> -->
 
-            <!-- <div class="ml-5 mr-5" (click)="accordionItem.toggle()">
+    <!-- <div class="ml-5 mr-5" (click)="accordionItem.toggle()">
                 <div class="col-12 config-content">
                     <mat-label class="config-label"> {{ item }}</mat-label>
                     <mat-label class="float-right config-right-text">Click to {{ accordionItem.expanded ? 'close' :
@@ -51,7 +51,7 @@
                 </section>
             </div> -->
 
-            <mat-card class="example-card mt-5" (click)="accordionItem.toggle()">
+    <!-- <mat-card class="example-card mt-5" (click)="accordionItem.toggle()">
                 <mat-card-content class="mt-2">
                     <mat-label class="configure-label">{{ item }}</mat-label><br />
                     <mat-label class="standard-label">{{subItems}}</mat-label>
@@ -66,20 +66,74 @@
                 <div class="example-accordion-item-body" role="region"
                     [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
                     [attr.aria-labelledby]="'accordion-header-' + index">
-                    <section class="example-section">
-                        <mat-checkbox class="example-margin">13.2.1 Information tranfer policies and procedures
-                        </mat-checkbox>
-                    </section>
-                    <section class="example-section">
-                        <mat-checkbox class="example-margin">13.2.2 Agreements on information transfer</mat-checkbox>
-                    </section>
-                    <section class="example-section">
-                        <mat-checkbox class="example-margin">13.2.3 Electronic messaging</mat-checkbox>
-                    </section>
+                    <mat-selection-list>
+                        <mat-list-option checkboxPosition="before">
+                            13.2.1 Information tranfer policies and procedures
+                        </mat-list-option>
+                        <mat-divider ></mat-divider>
+                        <mat-list-option checkboxPosition="before">
+                            13.2.2 Agreements on information transfer
+                        </mat-list-option>
+                        <mat-divider></mat-divider>
+                        <mat-list-option checkboxPosition="before">
+                            13.2.3 Electronic messaging
+                        </mat-list-option>
+                    </mat-selection-list>
                 </div>
-            </mat-card>
+            </mat-card> -->
 
-
-        </cdk-accordion-item>
-    </cdk-accordion>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle class="accordian-style">
+            <mat-expansion-panel-header>
+                <div>
+                    <mat-panel-title>
+                        <div class="col-12">
+                            <mat-label class="col-8 config-label">A.13.1 Network security management</mat-label>
+                            <mat-label class="col-4 float-end config-right-text">est. 500h</mat-label>
+                        </div>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div class="col-12">
+                            <mat-label class="desc-label">This framework contains controls with pre-defined activites
+                                which
+                                can immediatly be assigned and implemented.
+                            </mat-label>
+                        </div>
+                    </mat-panel-description>
+                </div>
+                <mat-progress-bar mode="determinate" value="40" class="mat-progress-bar-element mt-5">
+                </mat-progress-bar>
+            </mat-expansion-panel-header>
+            <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle class="accordian-style mt-5">
+            <mat-expansion-panel-header>
+                <div>
+                    <mat-panel-title>
+                        <div class="col-12">
+                            <mat-label class="col-8 config-label">A.13.2 Information transfer</mat-label>
+                            <mat-label class="col-4 float-end config-right-text">est. 500h</mat-label>
+                        </div>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <div class="col-12">
+                            <mat-label class="desc-label">Securing the information transfer is needed to mitigate the
+                                following risks...
+                            </mat-label>
+                        </div>
+                    </mat-panel-description>
+                </div>
+                <mat-progress-bar mode="determinate" value="10" class="mat-progress-bar-element mt-5">
+                </mat-progress-bar>
+            </mat-expansion-panel-header>
+            <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+    </mat-accordion>
 </div>
+
+
+
+
+<!-- [(ngModel)]="selectedOptions" (selectionChange)="onChange($event)" -->
