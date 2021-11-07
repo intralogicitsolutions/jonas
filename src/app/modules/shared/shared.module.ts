@@ -16,7 +16,8 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTabsModule } from '@angular/material/tabs';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [],
   imports: [
@@ -37,7 +38,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatInputModule,
     MatChipsModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ToastrModule.forRoot(),
   ],
   exports: [MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule, MatButtonModule, MatSnackBarModule,
     FormsModule,
@@ -45,6 +47,6 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTabsModule,
     MatExpansionModule,
     MatChipsModule,
-    MatFormFieldModule, MatCardModule, MatProgressBarModule, MatGridListModule, CdkAccordionModule, MatCheckboxModule]
+    MatFormFieldModule, MatCardModule, MatProgressBarModule, MatGridListModule, CdkAccordionModule, MatCheckboxModule, ToastrModule]
 })
 export class SharedModule { }

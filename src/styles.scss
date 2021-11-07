@@ -39,6 +39,10 @@ $jonas-theme: mat.define-light-theme(
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 
+// regular style toast
+@import '~ngx-toastr/toastr';
+
+
 html,
 body {
   height: 100%;
@@ -232,4 +236,34 @@ mat-card {
 .mat-expansion-panel-header {
   padding: 0px !important;
   height: auto !important;
+}
+
+.toast-container .ngx-toastr {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  padding: 15px !important;
+  // border-radius: 15px !important;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  box-shadow: 0 0 12px #999;
+  color: #000 !important;
+  // border: 1px solid white !important
+}
+
+.toast-success {
+  background-color: white !important;
+  background-image: none !important;
+}
+.toast-title {
+  font-weight: 400 !important;
+  font-size: 17px !important;
+}
+.toast-message{
+  font-size: 14px;
+  margin-top: 4px;
+}
+.toast-close-button{
+  color: #000 !important;
 }
