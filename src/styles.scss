@@ -123,7 +123,7 @@ mat-card {
   text-decoration: none;
 }
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
@@ -134,7 +134,7 @@ mat-card {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
 // .config-content-control-library {
@@ -174,7 +174,51 @@ mat-card {
 .mat-simple-snackbar-action {
   color: #ba85fa !important;
 }
-.modal-backdrop{
-  background-color:transparent !important;
+.modal-backdrop {
+  background-color: transparent !important;
   z-index: inherit !important;
+}
+.mat-tab-label {
+  letter-spacing: 1px !important;
+}
+.mat-tab-label-active {
+  color: #0c7879 !important;
+}
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #0c7879 !important;
+}
+.dash-desc-label {
+  font-size: 11px;
+  color: black;
+  letter-spacing: 1px;
+}
+.dash-sec-label {
+  font-weight: 500 !important;
+  font-size: 17px !important;
+}
+.dash-main-div {
+  margin: auto !important;
+  text-align: end !important;
+  justify-content: flex-end;
+}
+.mat-chip-list-wrapper {
+  display: inherit !important;
+}
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
+  background-color: #cf6679 !important;
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+}
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: rgb(112 239 222);
+  color: black;
+  font-weight: 100;
+  font-size: 14px;
+}
+.done-check {
+  color: grey;
+  font-weight: 600;
+  margin-right: 5px;
 }
