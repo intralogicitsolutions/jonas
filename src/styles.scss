@@ -150,3 +150,31 @@ mat-card {
     padding-left: var(--bs-gutter-x, 0.75rem);
   }
 }
+.mat-pseudo-checkbox-checked,
+.mat-pseudo-checkbox-indeterminate,
+.mat-accent .mat-pseudo-checkbox-checked,
+.mat-accent .mat-pseudo-checkbox-indeterminate {
+  background: #017374 !important;
+}
+.mat-pseudo-checkbox {
+  border: 2px solid #77898a !important;
+  height: 18px !important;
+  width: 18px !important;
+}
+.mat-pseudo-checkbox-checked::after {
+  left: 2px !important;
+  width: 8px !important;
+  height: 4px !important;
+}
+.mat-snack-bar-container {
+  min-width: 800px !important;
+  min-height: 100px !important;
+  background-color: #212121 !important;
+}
+.mat-simple-snackbar-action {
+  color: #ba85fa !important;
+}
+.modal-backdrop{
+  background-color:transparent !important;
+  z-index: inherit !important;
+}
