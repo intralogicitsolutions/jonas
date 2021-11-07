@@ -122,6 +122,24 @@ mat-card {
   color: #873cf2;
   text-decoration: none;
 }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+// .config-content-control-library {
+//   padding: 6px 15px 10px 20px;
+// }
 .container {
   padding-right: var(--bs-gutter-x, 3.75rem);
   padding-left: var(--bs-gutter-x, 3.75rem);

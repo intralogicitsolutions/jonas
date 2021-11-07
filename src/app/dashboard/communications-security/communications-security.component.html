@@ -1,0 +1,85 @@
+<!-- <p>manage-framework works!</p> -->
+<div class="container">
+    <mat-label class="control-frame-label">ISO27002 INTERNATIONAL STANDARD / A.13</mat-label>
+    <div class="row col-sm-12 col-lg-12 col-md-12 mt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-1">
+            <h1 class="manage-frame-h3">Communications Security</h1>
+            <mat-label class="control-frame-select">Communications security is all about secure communication. If you're
+                looking
+                for the latest in wireless headphones for your enjoyment and private listening, whether to TV, stereo,
+                home
+                entertainment such as theater, iTunes or Ipod, you might do well to look at the highly recommended
+                Sennheiser RS
+                130 wireless headphones. </mat-label>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mt-1">
+            <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu" height="80%" width="100%">
+        </div>
+    </div>
+    <cdk-accordion>
+        <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
+            role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+            [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+
+            <!-- <div class="ml-5 mr-5" (click)="accordionItem.toggle()">
+                <div class="col-12 config-content">
+                    <mat-label class="config-label"> {{ item }}</mat-label>
+                    <mat-label class="float-right config-right-text">Click to {{ accordionItem.expanded ? 'close' :
+                        'open' }}</mat-label>
+                </div>
+                <div class="col-12 config-content">
+                    <mat-label class="desc-label">{{subItems}}
+                    </mat-label>
+                </div>
+                <div class="mt-3 mb-3 config-content">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </div>
+
+            <div class="example-accordion-item-body" role="region"
+                [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                [attr.aria-labelledby]="'accordion-header-' + index">
+                <section class="example-section">
+                    <mat-checkbox class="example-margin">13.2.1 Information tranfer policies and procedures</mat-checkbox>
+                </section>
+                <section class="example-section">
+                    <mat-checkbox class="example-margin">13.2.2 Agreements on information transfer</mat-checkbox>
+                </section>
+                <section class="example-section">
+                    <mat-checkbox class="example-margin">13.2.3 Electronic messaging</mat-checkbox>
+                </section>
+            </div> -->
+
+            <mat-card class="example-card mt-5" (click)="accordionItem.toggle()">
+                <mat-card-content class="mt-2">
+                    <mat-label class="configure-label">{{ item }}</mat-label><br />
+                    <mat-label class="standard-label">{{subItems}}</mat-label>
+                    <div class="mt-5">
+                        <mat-label class="desc-label">If you don't have the capacity to make a proper risk assessment,
+                            then
+                            following a standard is a good option.</mat-label>
+                    </div>
+
+                </mat-card-content>
+                
+                <div class="example-accordion-item-body" role="region"
+                    [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                    [attr.aria-labelledby]="'accordion-header-' + index">
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">13.2.1 Information tranfer policies and procedures
+                        </mat-checkbox>
+                    </section>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">13.2.2 Agreements on information transfer</mat-checkbox>
+                    </section>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">13.2.3 Electronic messaging</mat-checkbox>
+                    </section>
+                </div>
+            </mat-card>
+
+
+        </cdk-accordion-item>
+    </cdk-accordion>
+</div>

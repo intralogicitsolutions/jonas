@@ -8,6 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -19,9 +23,12 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatButtonModule,
     MatFormFieldModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatGridListModule,
+    CdkAccordionModule,
+    MatCheckboxModule
   ],
   exports: [MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule, MatButtonModule,
-    MatFormFieldModule, MatCardModule, MatProgressBarModule]
+    MatFormFieldModule, MatCardModule, MatProgressBarModule, MatGridListModule,CdkAccordionModule,MatCheckboxModule]
 })
 export class SharedModule { }

@@ -1,0 +1,26 @@
+.mat-grid-tile-content {
+    align-items: end;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    color: blanchedalmond;
+}
+.mat-grid-tile-content-div{
+    background-color: rgb(44, 38, 38);
+    width: 100%;
+    height: 40px;
+    padding: 6px;
+}
+.control-lib-title{
+    font-size: 15px;
+    margin-left: 21px;
+}
