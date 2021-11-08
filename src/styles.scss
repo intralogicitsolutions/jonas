@@ -45,7 +45,7 @@ $jonas-theme: mat.define-light-theme(
 
 html,
 body {
-  height: 100%;
+  height: 100%;  
 }
 body {
   margin: 0;
@@ -57,20 +57,24 @@ body {
 .control-frame-label {
   font-size: 10px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  color: rgba(0,0,0,0.87);
 }
 .manage-frame-h1 {
   font-size: 60px !important;
-  font-weight: lighter !important;
+  font-weight: 300 !important;
   line-height: initial !important;
+  color: rgba(0,0,0,0.87);
 }
 .control-frame-select {
-  letter-spacing: 1px;
-  font-size: 13px;
+  letter-spacing: 0.25px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.74);
 }
 mat-card {
   box-shadow: none !important;
   border: 2px solid #d6d6d6 !important;
+  
 }
 .mat-card > .mat-card-xl-image:first-child {
   margin: 0px !important;
@@ -78,25 +82,29 @@ mat-card {
 .configure-label {
   font-size: 20px;
   font-weight: 500;
+  color: rgba(0,0,0,0.87);
+  letter-spacing: 0.15px;
 }
 .standard-label {
-  color: grey;
+  color: rgba(0,0,0,0.6);
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0.25px;
 }
 .desc-label {
-  font-size: 13px;
-  color: grey;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+  letter-spacing: 0.25px;
 }
 .manage-frame-h2 {
   font-size: 48px !important;
-  font-weight: 400 !important;
+  color: rgba(0,0,0,0.87);
 }
 .manage-frame-h3 {
-  font-size: 38px !important;
+  font-size: 34px !important;
   font-weight: 400 !important;
-  line-height: initial !important;
+  line-height: 36px !important;
+  letter-spacing: 0;
+  color: rgba(0,0,0,0.87);
 }
 .float-right {
   float: right !important;
@@ -106,10 +114,14 @@ mat-card {
   padding-right: 15px;
 }
 .config-label {
-  font-size: 17px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: rgba(0,0,0,0.87);
 }
 .config-right-text {
-  font-size: 13px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: rgba(0,0,0,0.87);
 }
 .mat-progress-bar-fill::after {
   background-color: #018786;
@@ -122,9 +134,10 @@ mat-card {
   line-height: initial !important;
 }
 .setup-button {
-  font-weight: 550;
-  color: #873cf2;
+  color: #7000F8;
   text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.4px;
 }
 .material-icons {
   font-family: "Material Icons";
@@ -176,30 +189,36 @@ mat-card {
   background-color: #212121 !important;
 }
 .mat-simple-snackbar-action {
-  color: #ba85fa !important;
+  color: #BB86FC !important;
 }
 .modal-backdrop {
   background-color: transparent !important;
   z-index: inherit !important;
 }
 .mat-tab-label {
-  letter-spacing: 1px !important;
+  color: rgba(187,134,252,0.38);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  
 }
 .mat-tab-label-active {
-  color: #0c7879 !important;
+  color: #017374 ;
 }
 .mat-tab-group.mat-primary .mat-ink-bar,
 .mat-tab-nav-bar.mat-primary .mat-ink-bar {
   background-color: #0c7879 !important;
 }
 .dash-desc-label {
-  font-size: 11px;
-  color: black;
-  letter-spacing: 1px;
+  color: rgba(18,18,18,0.87);
+  font-size: 12px !important;
+  letter-spacing: 0.4px;
 }
 .dash-sec-label {
-  font-weight: 500 !important;
-  font-size: 17px !important;
+  font-weight: 450 !important;
+  font-size: 16px !important;
+  color: rgba(0,0,0,0.87);
+  letter-spacing: 0.15px;
 }
 .dash-main-div {
   margin: auto !important;
@@ -211,15 +230,20 @@ mat-card {
 }
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
   background-color: #cf6679 !important;
-  color: white;
+  color: rgba(255,255,255,0.87);
   font-weight: 100;
-  font-size: 14px;
+  font-size: 14px !important;
+  letter-spacing: 0.25px;
+  border-radius: 16px;
 }
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
   background-color: rgb(112 239 222);
-  color: black;
+  color: rgba(0,0,0,0.87);
+  border-radius: 16px;
+  background-color: #70EFDE;
   font-weight: 100;
   font-size: 14px;
+  letter-spacing: 0.25px;
 }
 .done-check {
   color: grey;
@@ -258,12 +282,19 @@ mat-card {
 }
 .toast-title {
   font-weight: 400 !important;
-  font-size: 17px !important;
+  font-size: 16px !important;
+  letter-spacing: 0.25px;
+  color: #000000;
 }
 .toast-message{
   font-size: 14px;
   margin-top: 4px;
+  letter-spacing: 0.25px;
+  color: rgba(0,0,0,0.74);
 }
 .toast-close-button{
-  color: #000 !important;
+  color: #000000 !important;
+}
+.commu-security-img{
+  height: 300px;
 }

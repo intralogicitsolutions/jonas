@@ -36,7 +36,6 @@ export class CommunicationsSecurityComponent {
   showSuccess() {
     $('#exampleModal1').modal('hide');
     this.toastr.success('The responsibles will be notified by email containing necessary instructions..', 'The action were successfully assigned.',{closeButton:true});
-
   }
   ngOnInit(): void {
     this.items = ['A.13.1 Network security management', 'A.13.2 Information transfer'];
